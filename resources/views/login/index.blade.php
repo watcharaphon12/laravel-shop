@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-  	<title>Login 05</title>
+  	<title>Login</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -40,7 +40,7 @@
 								<form method="post" action="{{url('sent-login')}}">
 									@csrf
 			      		<div class="form-group mt-3">
-			      			<input type="text" name="name" class="form-control" required>
+			      			<input type="text" name="username" class="form-control" required>
 			      			<label class="form-control-placeholder" for="username">ชื่อผู้ใช้</label>
 			      		</div>
 		            <div class="form-group">

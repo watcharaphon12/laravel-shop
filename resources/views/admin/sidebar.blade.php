@@ -155,7 +155,7 @@
                                 <div id="submenu-6" class="collapse submenu" style="">
                                     <ul class="nav flex-column">
                                     <li class="nav-item">
-                                            <a class="nav-link" href="pages/blank-page.html">ผู้ดูแลระบบ</a>
+                                            <a class="nav-link" href="{{url('admin/data/admin')}}">ผู้ดูแลระบบ</a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="{{url('admin/data/users')}}">ผู้ใช้ทั่วไป</a>

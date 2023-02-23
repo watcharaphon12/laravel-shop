@@ -19,15 +19,15 @@ use App\Http\Controllers\AdminDataController;
 Route::get('login',[LoginController::class,'index'])->name('login');
 Route::get('register',[LoginController::class,'register'])->name('register');
 Route::post('sent-resgister',[LoginController::class,'sentRegister'])->name('sentResgister');
-Route::get('logout',[LoginController::class, 'logout']);
+Route::get('logout',[LoginController::class, 'logout'])->name('logout');
 Route::post('sent-login',[LoginController::class,'login']);
 //user
 Route::get('/',[ProductController::class, 'index'])->middleware('auth');
-
-
+Route::get('product-details/{id}',[ProductController::class, 'details']);
 
 //admin
 Route::middleware(['auth', 'auth.admin'])->group(function () {
     Route::get('admin/dashboard',[AdminController::class,'index']);  
     Route::get('admin/data/users',[AdminDataController::class,'getUsers']);  
+    Route::get('admin/data/admin',[AdminDataController::class,'getAdmin']);  
 });

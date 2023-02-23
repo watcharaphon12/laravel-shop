@@ -22,8 +22,8 @@
 							EN
 						</a>
 
-						<a href="#" class="flex-c-m trans-04 p-lr-25">
-							USD
+						<a href="{{route('logout')}}" class="flex-c-m trans-04 p-lr-25">
+							ออกจากระบบ
 						</a>
 					</div>
 				</div>
@@ -140,7 +140,7 @@
 						</a>
 
 						<a href="#" class="flex-c-m p-lr-10 trans-04">
-							USD
+							ออกจากระบบ
 						</a>
 					</div>
 				</li>
