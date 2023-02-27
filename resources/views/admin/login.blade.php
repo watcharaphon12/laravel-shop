@@ -38,7 +38,7 @@
             <div class="card-body">
                 <form method="post" action="{{url('login')}}">
                     <div class="form-group">
-                        <input class="form-control form-control-lg" name="name" type="text" placeholder="Username" autocomplete="off">
+                        <input class="form-control form-control-lg" name="email" type="text" placeholder="Username" autocomplete="off">
                     </div>
                     <div class="form-group">
                         <input class="form-control form-control-lg" name="password" type="password" placeholder="Password">

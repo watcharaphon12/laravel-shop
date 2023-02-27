@@ -515,7 +515,7 @@
 						<div class="block2-pic hov-img0">
 							<img src="{{$row->image_path}}" alt="IMG-PRODUCT">
 
-							<button class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
+							<button onclick="document.getElementById('details').src = '{{url('product-details/'.$row->product_id)}}';" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
 								เลือกดูสินค้า
 							</button>
 						</div>
@@ -714,7 +714,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
  <center>
 	<div class="wrap-modal1 js-modal1 p-t-60 p-b-20">
 		<div class="overlay-modal1 js-hide-modal1"></div>
-	<iframe width="90%" height="90%" src="{{url('product-details/2')}}"></iframe>
+	<iframe width="90%" height="90%" id="details" src=""></iframe>
 	</div>
 </center>
 	
