@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Product;
+use Illuminate\Support\Facades\Storage;
 
 class ProductController extends Controller
 {
@@ -21,5 +22,18 @@ class ProductController extends Controller
       $product->details;
     }
     return view('iframe.product-details');
+    }
+    public function getBanner(Request $request){
+      // $images=[Storage('image'),'',''];
+      $path = 'images/banner-01.jpg';
+      $url = [];
+      $i=0;
+      $data=['images/banner-01.jpg','images/banner-02.jpg','images/banner-03.jpg','images/banner-04.jpg','images/banner-05.jpg'];
+      foreach($data as $path){
+        $url[$i] = asset(Storage::url($path));
+        $i++;
+      }
+      return response()->json(['data' => $url]);
+      ;
     }
 }

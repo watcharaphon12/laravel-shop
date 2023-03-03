@@ -20,3 +20,4 @@ use App\Http\Controllers\ProductController;
 // });
 Route::post('login',[LoginController::class,'loginAPI']);
 Route::get('get-product',[ProductController::class, 'getProduct'])->middleware('jwt.auth');
+Route::get('get-banner',[ProductController::class, 'getBanner'])->middleware('jwt.auth');
