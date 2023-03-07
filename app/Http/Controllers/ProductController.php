@@ -24,8 +24,7 @@ class ProductController extends Controller
     return view('iframe.product-details');
     }
     public function getBanner(Request $request){
-      // $images=[Storage('image'),'',''];
-      $path = 'images/banner-01.jpg';
+ 
       $url = [];
       $i=0;
       $data=['images/banner-01.jpg','images/banner-02.jpg','images/banner-03.jpg','images/banner-04.jpg','images/banner-05.jpg'];
